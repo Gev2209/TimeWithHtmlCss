@@ -15,6 +15,12 @@ body {
   align-items: center;
   border-radius: 100%;
 }
+@media only screen and (max-width: 600px) {
+  .body {
+    width: 360px;
+    height: 360px;
+  }
+}
 .body .inside {
   border: 8px solid #f8d8a7;
   width: 495px;
@@ -24,69 +30,163 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside {
+    width: 350px;
+    height: 350px;
+  }
+}
 .body .inside .number {
   font-size: 30px;
   color: white;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .number {
+    font-size: 25px;
+  }
+}
 .body .inside .twelve {
   position: absolute;
   top: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .twelve {
+    position: absolute;
+    top: 33%;
+  }
 }
 .body .inside .one {
   position: absolute;
   top: 20%;
   right: 42%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .one {
+    position: absolute;
+    top: 37%;
+    right: 31%;
+  }
+}
 .body .inside .two {
   position: absolute;
   top: 33%;
   right: 35.9%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .two {
+    position: absolute;
+    top: 50%;
+    right: 18%;
+  }
 }
 .body .inside .three {
   position: absolute;
   top: 48%;
   right: 34.2%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .three {
+    position: absolute;
+    top: 67%;
+    right: 11%;
+  }
+}
 .body .inside .four {
   position: absolute;
   bottom: 30%;
   right: 36%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .four {
+    position: absolute;
+    bottom: 7%;
+    right: 13.5%;
+  }
 }
 .body .inside .five {
   position: absolute;
   bottom: 17%;
   right: 41%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .five {
+    position: absolute;
+    bottom: -10%;
+    right: 26%;
+  }
+}
 .body .inside .six {
   position: absolute;
   bottom: 11%;
   right: 49.4%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .six {
+    position: absolute;
+    bottom: -17%;
+    right: 49%;
+  }
 }
 .body .inside .seven {
   position: absolute;
   bottom: 17%;
   left: 41%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .seven {
+    position: absolute;
+    bottom: -10%;
+    left: 26%;
+  }
+}
 .body .inside .eight {
   position: absolute;
   bottom: 30%;
   left: 36%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .eight {
+    position: absolute;
+    bottom: 7%;
+    left: 13.5%;
+  }
 }
 .body .inside .nine {
   position: absolute;
   top: 48%;
   left: 34.2%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .nine {
+    position: absolute;
+    top: 67%;
+    left: 11%;
+  }
+}
 .body .inside .ten {
   position: absolute;
   top: 33%;
   left: 35.9%;
 }
+@media only screen and (max-width: 600px) {
+  .body .inside .ten {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+  }
+}
 .body .inside .eleven {
   position: absolute;
   top: 20%;
   left: 42%;
+}
+@media only screen and (max-width: 600px) {
+  .body .inside .eleven {
+    position: absolute;
+    top: 37%;
+    left: 31%;
+  }
 }
 .body .mec {
   width: 2px;
@@ -95,15 +195,44 @@ body {
   border-radius: 20px;
   animation: time infinite linear 10s;
 }
+@media only screen and (max-width: 600px) {
+  .body .mec {
+    height: 200px;
+  }
+}
 .body .poqr {
   width: 3px;
-  height: 200px;
+  height: 150px;
   background: #ffffff;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .body .poqr {
+    height: 80px;
+  }
+}
+.body .mec2 {
+  background: #000000;
+  width: 6px;
+  height: 200px;
+  animation: Time infinite linear 8s;
+  border-radius: 20px;
+}
+.body .poqr2 {
+  width: 6px;
+  height: 100px;
+  background: #808080;
   border-radius: 20px;
 }
 @keyframes time {
   from {
     transform: rotate(-360deg);
     transition: all ease 9s;
+  }
+}
+@keyframes Time {
+  from {
+    transform: rotate(-360deg);
+    transition: all ease-in 8s;
   }
 }
