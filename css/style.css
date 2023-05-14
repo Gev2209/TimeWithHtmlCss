@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  background: rgba(165, 108, 2, 0.712);
+}
+.body {
+  border: 10px solid #000;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.body .inside {
+  border: 8px solid #f8d8a7;
+  width: 495px;
+  height: 490px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body .inside .number {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+.body .inside .twelve {
+  position: absolute;
+  top: 15%;
+}
+.body .inside .one {
+  position: absolute;
+  top: 20%;
+  right: 42%;
+}
+.body .inside .two {
+  position: absolute;
+  top: 33%;
+  right: 35.9%;
+}
+.body .inside .three {
+  position: absolute;
+  top: 48%;
+  right: 34.2%;
+}
+.body .inside .four {
+  position: absolute;
+  bottom: 30%;
+  right: 36%;
+}
+.body .inside .five {
+  position: absolute;
+  bottom: 17%;
+  right: 41%;
+}
+.body .inside .six {
+  position: absolute;
+  bottom: 11%;
+  right: 49.4%;
+}
+.body .inside .seven {
+  position: absolute;
+  bottom: 17%;
+  left: 41%;
+}
+.body .inside .eight {
+  position: absolute;
+  bottom: 30%;
+  left: 36%;
+}
+.body .inside .nine {
+  position: absolute;
+  top: 48%;
+  left: 34.2%;
+}
+.body .inside .ten {
+  position: absolute;
+  top: 33%;
+  left: 35.9%;
+}
+.body .inside .eleven {
+  position: absolute;
+  top: 20%;
+  left: 42%;
+}
+.body .mec {
+  width: 2px;
+  height: 300px;
+  background: #000;
+  border-radius: 20px;
+  animation: time infinite linear 10s;
+}
+.body .poqr {
+  width: 3px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+@keyframes time {
+  from {
+    transform: rotate(-360deg);
+    transition: all ease 9s;
+  }
+}
